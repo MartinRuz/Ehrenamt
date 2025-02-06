@@ -14,6 +14,8 @@ For different usage purposes, this file can contain any other tournaments as wel
 Lastly, there must also be a file egd_pins.csv, which is again not publicly available because it contains sensitive data about our members.
 It contains ;-separated entries of the form 'first name'; 'last name'; 'egd-pin'.
 ## KuT
+In this subfolder is the main-script for the KuT-Pokal of the Deutscher Go Bund e.V. https://www.dgob.de/wettbewerbe/jugendturniere/kids-und-teenspokal/
+
 The folder KuT-Pokal does not contain the file scrape_names.py because of privacy concerns.
 The script once again requires the current all.hst.txt file from https://europeangodatabase.eu/EGD/EGD_2_0/downloads/all.hst to be present in the same folder.
 Additionally, a file automated_names.txt is required, of the form 'first name' 'last name' 'category' (i.e. space-separated). These are the names of the players that fall into each category, and that will be analyzed.
