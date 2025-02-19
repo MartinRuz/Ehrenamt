@@ -1,0 +1,23 @@
+In main.py ist ein Skript um semi-automatisch den Kids-und Teenspokal auszuwerten.
+Vorraussetzungen:
+all.hst.txt von der EGD runterladen https://europeangodatabase.eu/EGD/EGF_rating_system.php
+
+Option A:
+Ein tab-separiertes file namens 'automated_names.txt' mit den folgenden Spalten:
+Vorname Name Geburtsjahr
+Diese Daten lassen sich beispielsweise aus der Jugendliga-Tabelle kopieren.
+
+Option B:
+Ein Excel-File und das scrape_names.py File.
+Das Excel-File hat eine Tabelle 'Tabelle1' (in scrape_names.py Zeile 39 zu ändern), wo in Spalte 0 und 1 Vorname und Name stehen, und in Spalte 8 die Jahreszahl der Teilnehmenden eingetragen ist. Wenn mehr Teilnehmende bekannt sind, als in der Jugendliga-Tabelle auftauchen, dann müssen diese im selben Format (also Spalte 0,1,8) hinzugefügt werden.
+
+Bei Option B wird jetzt zunächst das scrape_names.py File ausgeführt.
+
+Dann wird in beiden Fällen folgendes gemacht:
+
+In main.py in Zeile 236 die Jahreszahl aktualisieren
+main.py ausführen
+
+tournaments_JAHRESZAHL.txt hat jetzt die Turniere als Liste, die man einfach auf die Webseite kopieren kann. Der Header ist in der Tabelle enthalten.
+tables_JAHRESZAHL.txt hat die Tabellen für U12 (zuerst) und U18 im selben Format
+
